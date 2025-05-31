@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Doctor Consultation</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>eHealthCare</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#doctors">Doctors</a></li>
+      <li><a href="#booking">Book Appointment</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Consult a Doctor Online</h2>
+    <p>Your health, our priority — Anytime, Anywhere</p>
+    <button onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });">Book Now</button>
+  </section>
+
+  <!-- Doctor Listing -->
+  <section id="doctors">
+    <h2>Available Doctors</h2>
+    <div class="doctor-list">
+      <div class="doctor-card">
+        <h3>Dr. Anjali Sharma</h3>
+        <p>Cardiologist</p>
+        <button onclick="alert('Booking Dr. Anjali Sharma')">Book</button>
+      </div>
+      <div class="doctor-card">
+        <h3>Dr. Rajeev Singh</h3>
+        <p>General Physician</p>
+        <button onclick="alert('Booking Dr. Rajeev Singh')">Book</button>
+      </div>
+      <div class="doctor-card">
+        <h3>Dr. Priya Kumar</h3>
+        <p>Dermatologist</p>
+        <button onclick="alert('Booking Dr. Priya Kumar')">Book</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking">
+    <h2>Book an Appointment</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="number" id="age" placeholder="Age" required min="1" max="120" />
+      <input type="text" id="symptoms" placeholder="Symptoms" required />
+      <input type="datetime-local" id="appointmentDate" required />
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@ehealthcare.com</p>
+    <p>Phone: +91-9876543210</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 eHealthCare. All rights reserved.</p>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+ <script src="index.js"></script>
+</body>
+</html>
